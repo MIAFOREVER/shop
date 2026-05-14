@@ -1,0 +1,9 @@
+.env
+wordpress/
+db-data/
+wp-content/uploads/
+wp-content/cache/
+.DS_Store
+node_modules/
+npm-debug.log*
+
