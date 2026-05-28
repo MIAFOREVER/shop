@@ -29,8 +29,8 @@ bash scripts/setup.sh
 
 默认访问地址：
 
-- 店铺首页：http://localhost:8080
-- WordPress 后台：http://localhost:8080/wp-admin
+- 店铺首页：http://localhost:8090
+- WordPress 后台：http://localhost:8090/wp-admin
 
 默认后台账号来自 `.env`：
 
