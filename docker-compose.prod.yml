@@ -28,7 +28,9 @@ services:
       WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}
       WORDPRESS_CONFIG_EXTRA: |
         define('WP_ENVIRONMENT_TYPE', 'production');
-        define('WP_DEBUG', false);
+        if (!defined('WP_DEBUG')) {
+            define('WP_DEBUG', false);
+        }
         define('DISALLOW_FILE_EDIT', true);
         define('WP_MEMORY_LIMIT', '256M');
         if (isset($$_SERVER['HTTP_X_FORWARDED_PROTO']) && $$_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
